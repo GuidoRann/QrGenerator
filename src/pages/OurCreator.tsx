@@ -33,8 +33,8 @@ export default function OurCreator() {
       { qrImageUrl && <Modal isOpen={isModalOpen} onClose={handleCloseModal} qrImageUrl={qrImageUrl} /> }
       
         {/* Titulo de la página */}
-      <div className="h-1/3 flex justify-center">
-        <h1 className="font-Lobster text-5xl font-black w-[85%] pt-32 text-center">Creemos tu codigo QR</h1>
+      <div className="h-1/3 flex flex-col justify-center items-center">
+        <h1 className="font-Lobster text-5xl font-black w-[85%] text-center">Creemos tu codigo QR</h1>
       </div>
 
         {/* Cuerpo de la página */}
