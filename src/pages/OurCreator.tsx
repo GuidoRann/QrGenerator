@@ -30,7 +30,7 @@ export default function OurCreator() {
     <div className="flex flex-col h-screen w-screen items-center text-gray-300 bg-slate-800 font-Poppins">
 
         {/* Modal para mostrar el Codigo QR */}
-      { qrImageUrl && <Modal isOpen={true} onClose={handleCloseModal} qrImageUrl={qrImageUrl} /> }
+      { qrImageUrl && <Modal isOpen={isModalOpen} onClose={handleCloseModal} qrImageUrl={qrImageUrl} /> }
       
         {/* Titulo de la página */}
       <div className="h-1/3 flex justify-center">
@@ -53,6 +53,7 @@ export default function OurCreator() {
             className="w-full p-3 rounded-lg bg-slate-600 caret-secondary-color border border-gray-400 focus:border-primary-color focus:outline-none"
           />
           <button 
+            onClick={() => setIsModalOpen(true)}
             type="submit"
             className="flex justify-between p-3 items-center bg-primary-color hover:bg-purple-700 transition-colors duration-300 rounded-xl font-medium w-[80%]">Generar Código QR</button>
         </form>
