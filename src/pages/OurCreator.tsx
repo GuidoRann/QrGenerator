@@ -40,7 +40,7 @@ export default function OurCreator() {
         {/* Cuerpo de la página */}
       <div className="flex flex-col justify-center items-center h-1/3 font-bold">
         <div className="flex flex-col justify-center items-center pb-4">
-          <p className="w-[90%]">El proceso es muy simple, agrega el Link, el texto o lo que quieras codificar aquí.</p>
+          <p className="w-[90%] text-center">El proceso es muy simple, agrega el Link, el texto o lo que quieras codificar aquí.</p>
           <ChevronsDown className="w-10 h-10"/>
         </div>
         <form 
