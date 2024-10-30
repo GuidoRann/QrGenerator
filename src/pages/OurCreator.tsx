@@ -27,7 +27,7 @@ export default function OurCreator() {
   }
 
   return (
-    <div className="flex flex-col h-screen w-screen items-center text-gray-300 bg-slate-800 font-Poppins">
+    <div className="absolute top-0 z-[-2] h-screen w-screen bg-[#1e293b] bg-[radial-gradient(#9333ea33_1px,#00091d_1px)] bg-[size:20px_20px] text-gray-300 font-Poppins">
 
         {/* Modal para mostrar el Codigo QR */}
       { qrImageUrl && <Modal isOpen={isModalOpen} onClose={handleCloseModal} qrImageUrl={qrImageUrl} /> }
@@ -38,7 +38,7 @@ export default function OurCreator() {
       </div>
 
         {/* Cuerpo de la página */}
-      <div className="flex flex-col justify-center items-center h-1/3 font-bold">
+      <div className="flex flex-col justify-center items-center h-1/3 font-bold pt-24">
         <div className="flex flex-col justify-center items-center pb-4">
           <p className="w-[90%] text-center">El proceso es muy simple, agrega el Link, el texto o lo que quieras codificar aquí.</p>
           <ChevronsDown className="w-10 h-10"/>

@@ -27,15 +27,15 @@ export default function OurReader() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-screen items-center text-gray-300 bg-slate-800 font-Poppins">
-
+    <div className="absolute top-0 z-[-2] h-screen w-screen bg-[#1e293b] bg-[radial-gradient(#9333ea33_1px,#00091d_1px)] bg-[size:20px_20px] text-gray-300 font-Poppins">
+      
         {/* Titulo de la página */}
       <div className="h-1/3 flex flex-col justify-center items-center">
         <h1 className="font-Lobster text-5xl font-black w-[85%] text-center">Vamos a leer tu código QR</h1>
       </div>
 
         {/* Cuerpo de la página */}
-      <div className="flex flex-col justify-center items-center h-1/3 font-bold">
+      <div className="flex flex-col justify-center items-center h-1/3 font-bold pt-20">
         <div className="flex flex-col justify-center items-center pb-5">
           <p className="w-[90%] text-center">Toca en el botón y selecciona la imagen de tu dispositivo con el código QR que deseas leer.</p>
           <ChevronsDown className="w-8 h-8"/>
