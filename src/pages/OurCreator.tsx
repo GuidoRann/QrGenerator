@@ -34,7 +34,7 @@ export default function OurCreator() {
       
         {/* Titulo de la página */}
       <div className="h-1/3 flex flex-col justify-center items-center">
-        <h1 className="font-Lobster text-5xl font-black w-[85%] text-center">Creemos tu codigo QR</h1>
+        <h1 className="font-Lobster text-5xl font-black w-[85%] text-center">Vamos a crear tu código QR</h1>
       </div>
 
         {/* Cuerpo de la página */}
