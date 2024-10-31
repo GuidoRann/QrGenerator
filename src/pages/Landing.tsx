@@ -12,8 +12,8 @@ export default function Landing() {
         <div className="flex flex-col justify-center items-center py-14 px-5">
 
           {/* Sección de creación y lectura de QR */}
-          <section className="flex flex-col justify-center items-center gap-4">
-            <div className="flex flex-col justify-center items-center p-6 gap-3 bg-slate-600 bg-opacity-35 rounded-2xl">
+          <section className="flex flex-col justify-center items-center gap-4 lg:flex-row lg:gap-20">
+            <div className="flex flex-col justify-center items-center p-6 gap-3 bg-slate-600 bg-opacity-35 rounded-2xl lg:max-w-md">
               <QrCode className="w-20 h-20 text-secondary-color mb-4" />
               <h1 className="font-bold text-lg">Crea tu código QR</h1>
               <p className="pb-4 text-gray-400">
@@ -26,7 +26,7 @@ export default function Landing() {
                 Crear tu propio QR <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
-            <div className="flex flex-col justify-between items-center p-6 gap-3 bg-slate-600 bg-opacity-35 rounded-2xl">
+            <div className="flex flex-col justify-between items-center p-6 gap-3 bg-slate-600 bg-opacity-35 rounded-2xl lg:max-w-md">
               <ScanQrCode className="w-20 h-20 text-secondary-color mb-4" />
               <h1 className="font-bold text-lg">Lee el código QR de una imagen</h1>
               <p className="pb-4 text-gray-400">
@@ -63,6 +63,7 @@ export default function Landing() {
               ))}
             </div>
           </section>
+
         </div>
         <Footer />
       </div>

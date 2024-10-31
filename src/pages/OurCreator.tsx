@@ -38,30 +38,31 @@ export default function OurCreator() {
       </div>
 
         {/* Cuerpo de la página */}
-      <div className="flex flex-col justify-center items-center h-1/3 font-bold pt-24">
-        <div className="flex flex-col justify-center items-center pb-4">
-          <p className="w-[90%] text-center">El proceso es muy simple, agrega el Link, el texto o lo que quieras codificar aquí.</p>
-          <ChevronsDown className="w-10 h-10"/>
+      <div className="flex flex-col justify-center items-center h-1/3 font-bold pt-24 lg:w-screen">
+        <div className="flex flex-col justify-center items-center pb-4 lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-[50%]">
+            <div className="flex flex-col justify-center items-center pb-4 lg:pb-8 lg:w-[70%] lg:text-xl">
+              <p className="w-[90%] lg:w-full text-center lg:pb-4">El proceso es muy simple, agrega el Link, el texto o lo que quieras codificar aquí.</p>
+              <ChevronsDown className="w-10 h-10"/>
+            </div>
+            <form 
+            onSubmit={handleSubmit}
+            className="flex flex-col justify-center items-center gap-2 w-[85%]">
+              <input
+                type="text"
+                onChange={ ( event ) => setQrValue( event.target.value ) }
+                placeholder="Inserta el contenido del codigo QR"
+                className="w-full p-3 rounded-lg bg-slate-600 caret-secondary-color border border-gray-400 focus:border-primary-color focus:outline-none"/>
+              <button 
+                onClick={() => setIsModalOpen(true)}
+                type="submit"
+                className="flex justify-between p-3 items-center bg-primary-color hover:bg-purple-700 transition-colors duration-300 rounded-xl font-medium w-[80%]">Generar Código QR</button>
+            </form>
         </div>
-        <form 
-        onSubmit={handleSubmit}
-        className="flex flex-col justify-center items-center gap-2 w-[85%]">
-          <input
-            type="text"
-            onChange={ ( event ) => setQrValue( event.target.value ) }
-            placeholder="Inserta el contenido del codigo QR"
-            className="w-full p-3 rounded-lg bg-slate-600 caret-secondary-color border border-gray-400 focus:border-primary-color focus:outline-none"
-          />
-          <button 
-            onClick={() => setIsModalOpen(true)}
-            type="submit"
-            className="flex justify-between p-3 items-center bg-primary-color hover:bg-purple-700 transition-colors duration-300 rounded-xl font-medium w-[80%]">Generar Código QR</button>
-        </form>
       </div>
 
         {/* Boton para volver al inicio */}
-       <div className="h-1/3 w-full flex justify-end items-end">
-         <Link to="/" className="w-full flex justify-center p-3 items-center bg-purple-600 hover:bg-purple-700 transition-colors duration-300 rounded-xl font-medium">
+       <div className="h-1/3 w-full flex justify-end items-end lg:justify-center">
+         <Link to="/" className="w-full lg:w-1/3 flex justify-center p-3 items-center bg-purple-600 hover:bg-purple-700 transition-colors duration-300 rounded-xl font-medium">
             Volver al inicio
          </Link>
        </div>
