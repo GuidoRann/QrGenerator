@@ -1,6 +1,6 @@
-# QR Generator & Scanner
+# Conectando QR
 
-¡Bienvenido a **QR Generator & Scanner**! Este proyecto es una aplicación web gratuita que permite tanto la creación de códigos QR como su lectura desde imágenes. Sin necesidad de dispositivos adicionales para escanear, solo sube una imagen que contenga un QR y la aplicación hará el resto.
+¡Bienvenido a **Conectando QR**! Este proyecto es una aplicación web gratuita que permite tanto la creación de códigos QR como su lectura desde imágenes. Sin necesidad de dispositivos adicionales para escanear, solo sube una imagen que contenga un QR y la aplicación hará el resto.
 
 ## ✨ Funcionalidades principales
 
