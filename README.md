@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# Conectando QR
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a **Conectando QR**! Este proyecto es una aplicación web gratuita que permite tanto la creación de códigos QR como su lectura desde imágenes. Sin necesidad de dispositivos adicionales para escanear, solo sube una imagen que contenga un QR y la aplicación hará el resto.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Generación de QR gratuita**: Crea códigos QR personalizados sin costo alguno.
+- **Escaneo desde imágenes**: No necesitas un dispositivo externo, simplemente carga una imagen que contenga un código QR, ¡y obtendrás la información al instante!
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Para la construcción de la interfaz de usuario.
+- **TypeScript**: Para agregar tipado estático y mejorar la mantenibilidad del código.
+- **Tailwind CSS**: Para un diseño limpio y moderno con estilos rápidos.
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Uso de la aplicación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Crear un QR**: Ingresa el texto o enlace deseado en el campo de generación, y el QR aparecerá listo para descargar.
+2. **Escanear un QR desde una imagen**: Sube cualquier imagen que contenga un QR. La aplicación detectará el código y mostrará la información en pantalla.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+> **Nota**: No es necesaria la instalación; solo ingresa a la [web](https://conectandoqr.vercel.app/) y comienza a usarla.
