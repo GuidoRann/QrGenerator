@@ -20,7 +20,7 @@ export default function Modal({ isOpen, onClose, qrImageUrl }: modalProps) {
           <div className="py-4 flex flex-col justify-center">
             <div className="py-4">
                 <p>
-                  Escribi el nombre de tu codigo QR
+                  Escribi el nombre de tu codigo QR aquí
                 </p>
                 <input 
                 type="text" 
