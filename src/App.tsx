@@ -1,7 +1,7 @@
-import Landing from './pages/Landing';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import OurCreator from './pages/OurCreator';
-import OurReader from './pages/OurReader';
+import Landing from './App/pages/Landing';
+import QRGenerator from './App/pages/QRGenerator';
+import QRReader from './App/pages/QRReader';
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Routes>  
         <Route path="/" element={<Landing />} />
-        <Route path="/creator" element={<OurCreator />} />
-        <Route path="/reader" element={<OurReader />} />
+        <Route path="/generator" element={<QRGenerator />} />
+        <Route path="/reader" element={<QRReader />} />
       </Routes>
     </BrowserRouter>
   )
