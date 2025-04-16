@@ -15,7 +15,7 @@ export default function QRGenerator() {
     const [ qrImageUrl, setQrImageUrl ] = useState<string>('')
     
     const [alertOpen, setAlertOpen] = useState(false)
-  
+
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault()
       
@@ -24,7 +24,10 @@ export default function QRGenerator() {
         return
       }
   
-      const response = await QRCode.toDataURL(qrValue)
+      const response = await QRCode.toDataURL(qrValue, {
+        width: 512,
+        margin: 2,
+      })
       setQrImageUrl(response)
     }
   

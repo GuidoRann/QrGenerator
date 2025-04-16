@@ -38,6 +38,9 @@ importers:
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
+      qr-code-styling:
+        specifier: ^1.9.2
+        version: 1.9.2
       qr-scanner:
         specifier: ^1.4.2
         version: 1.4.2
@@ -1497,8 +1500,15 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
+  qr-code-styling@1.9.2:
+    resolution: {integrity: sha512-RgJaZJ1/RrXJ6N0j7a+pdw3zMBmzZU4VN2dtAZf8ZggCfRB5stEQ3IoDNGaNhYY3nnZKYlYSLl5YkfWN5dPutg==}
+    engines: {node: '>=18.18.0'}
+
   qr-scanner@1.4.2:
     resolution: {integrity: sha512-kV1yQUe2FENvn59tMZW6mOVfpq9mGxGf8l6+EGaXUOd4RBOLg7tRC83OrirM5AtDvZRpdjdlXURsHreAOSPOUw==}
+
+  qrcode-generator@1.4.4:
+    resolution: {integrity: sha512-HM7yY8O2ilqhmULxGMpcHSF1EhJJ9yBj8gvDEuZ6M+KGJ0YY2hKpnXvRD+hZPLrDVck3ExIGhmPtSdcjC+guuw==}
 
   qrcode@1.5.4:
     resolution: {integrity: sha512-1ca71Zgiu6ORjHqFBDpnSMTR2ReToX4l1Au1VFLyVeBTFavzQnv5JxMFr3ukHVKpSrSA2MCk0lNJSykjUfz7Zg==}
@@ -3044,9 +3054,15 @@ snapshots:
 
   punycode@2.3.1: {}
 
+  qr-code-styling@1.9.2:
+    dependencies:
+      qrcode-generator: 1.4.4
+
   qr-scanner@1.4.2:
     dependencies:
       '@types/offscreencanvas': 2019.7.3
+
+  qrcode-generator@1.4.4: {}
 
   qrcode@1.5.4:
     dependencies:

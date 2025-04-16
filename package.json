@@ -20,6 +20,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.487.0",
     "postcss": "^8.5.3",
+    "qr-code-styling": "^1.9.2",
     "qr-scanner": "^1.4.2",
     "qrcode": "^1.5.4",
     "react": "^19.0.0",
