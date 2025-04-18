@@ -95,7 +95,7 @@ export default function QRModal({ qrData, isOpen, onClose }: QRModalProps) {
 
       <div className="space-y-2 text-[#f5f5f5]">
         <h3 className="font-medium">Instrucciones</h3>
-        <ul className="text-sm text-muted-foreground space-y-2">
+        <ul className="text-sm text-gray-400 space-y-2">
           <li className="flex items-start gap-2">
             <span className="bg-[#061124] rounded-full w-5 h-5 flex items-center justify-center text-xs mt-0.5 text-[#f5f5f5]">
               1
